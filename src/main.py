@@ -16,7 +16,7 @@ if __name__ == '__main__':
 	app = QApplication(sys.argv)
 	frame = MainWindow()
 	frame.show()
-	app.exec_()
+	app.exec_()  
 	
 	
 	
