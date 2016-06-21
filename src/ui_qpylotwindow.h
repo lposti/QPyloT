@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'qpylotwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 4.8.6
+** Created by: Qt User Interface Compiler version 5.6.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,29 +10,29 @@
 #define UI_QPYLOTWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QCheckBox>
-#include <QtGui/QComboBox>
-#include <QtGui/QDoubleSpinBox>
-#include <QtGui/QFrame>
-#include <QtGui/QGridLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QListWidget>
-#include <QtGui/QMainWindow>
-#include <QtGui/QMenuBar>
-#include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QSpinBox>
-#include <QtGui/QStackedWidget>
-#include <QtGui/QStatusBar>
-#include <QtGui/QTabWidget>
-#include <QtGui/QToolBar>
-#include <QtGui/QToolButton>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDoubleSpinBox>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTabWidget>
+#include <QtWidgets/QToolBar>
+#include <QtWidgets/QToolButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -108,6 +108,7 @@ public:
     QLabel *Fontlabel;
     QToolButton *LabelFonttoolButton;
     QFrame *line_2;
+    QWidget *page;
     QWidget *tab_2;
     QMenuBar *menuBar;
     QStatusBar *statusBar;
@@ -116,28 +117,28 @@ public:
     void setupUi(QMainWindow *QPyLOTWindow)
     {
         if (QPyLOTWindow->objectName().isEmpty())
-            QPyLOTWindow->setObjectName(QString::fromUtf8("QPyLOTWindow"));
+            QPyLOTWindow->setObjectName(QStringLiteral("QPyLOTWindow"));
         centralWidget = new QWidget(QPyLOTWindow);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout = new QGridLayout(centralWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
         MaintabWidget = new QTabWidget(centralWidget);
-        MaintabWidget->setObjectName(QString::fromUtf8("MaintabWidget"));
+        MaintabWidget->setObjectName(QStringLiteral("MaintabWidget"));
         Plot2Dtab = new QWidget();
-        Plot2Dtab->setObjectName(QString::fromUtf8("Plot2Dtab"));
+        Plot2Dtab->setObjectName(QStringLiteral("Plot2Dtab"));
         gridLayout_2 = new QGridLayout(Plot2Dtab);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
         Plot2DlistWidget = new QListWidget(Plot2Dtab);
         new QListWidgetItem(Plot2DlistWidget);
         new QListWidgetItem(Plot2DlistWidget);
         new QListWidgetItem(Plot2DlistWidget);
         new QListWidgetItem(Plot2DlistWidget);
         new QListWidgetItem(Plot2DlistWidget);
-        Plot2DlistWidget->setObjectName(QString::fromUtf8("Plot2DlistWidget"));
+        Plot2DlistWidget->setObjectName(QStringLiteral("Plot2DlistWidget"));
         QSizePolicy sizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -151,15 +152,15 @@ public:
         gridLayout_2->addItem(horizontalSpacer, 1, 0, 1, 1);
 
         Plot2DstackedWidget = new QStackedWidget(Plot2Dtab);
-        Plot2DstackedWidget->setObjectName(QString::fromUtf8("Plot2DstackedWidget"));
+        Plot2DstackedWidget->setObjectName(QStringLiteral("Plot2DstackedWidget"));
         Plot2DDatapage = new QWidget();
-        Plot2DDatapage->setObjectName(QString::fromUtf8("Plot2DDatapage"));
+        Plot2DDatapage->setObjectName(QStringLiteral("Plot2DDatapage"));
         gridLayout_3 = new QGridLayout(Plot2DDatapage);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
         Filelabel = new QLabel(Plot2DDatapage);
-        Filelabel->setObjectName(QString::fromUtf8("Filelabel"));
+        Filelabel->setObjectName(QStringLiteral("Filelabel"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Maximum);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -173,81 +174,81 @@ public:
         gridLayout_3->addItem(verticalSpacer, 5, 1, 1, 1);
 
         Y1lineEdit = new QLineEdit(Plot2DDatapage);
-        Y1lineEdit->setObjectName(QString::fromUtf8("Y1lineEdit"));
+        Y1lineEdit->setObjectName(QStringLiteral("Y1lineEdit"));
 
         gridLayout_3->addWidget(Y1lineEdit, 3, 1, 1, 1);
 
         line = new QFrame(Plot2DDatapage);
-        line->setObjectName(QString::fromUtf8("line"));
+        line->setObjectName(QStringLiteral("line"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
 
         gridLayout_3->addWidget(line, 4, 0, 1, 4);
 
         Y1comboBox = new QComboBox(Plot2DDatapage);
-        Y1comboBox->setObjectName(QString::fromUtf8("Y1comboBox"));
+        Y1comboBox->setObjectName(QStringLiteral("Y1comboBox"));
         Y1comboBox->setEnabled(false);
 
         gridLayout_3->addWidget(Y1comboBox, 3, 3, 1, 1);
 
         Y1pushButton = new QPushButton(Plot2DDatapage);
-        Y1pushButton->setObjectName(QString::fromUtf8("Y1pushButton"));
+        Y1pushButton->setObjectName(QStringLiteral("Y1pushButton"));
 
         gridLayout_3->addWidget(Y1pushButton, 3, 2, 1, 1);
 
         Columnlabel = new QLabel(Plot2DDatapage);
-        Columnlabel->setObjectName(QString::fromUtf8("Columnlabel"));
+        Columnlabel->setObjectName(QStringLiteral("Columnlabel"));
 
         gridLayout_3->addWidget(Columnlabel, 1, 3, 1, 1);
 
         X1pushButton = new QPushButton(Plot2DDatapage);
-        X1pushButton->setObjectName(QString::fromUtf8("X1pushButton"));
+        X1pushButton->setObjectName(QStringLiteral("X1pushButton"));
 
         gridLayout_3->addWidget(X1pushButton, 2, 2, 1, 1);
 
         Y1label = new QLabel(Plot2DDatapage);
-        Y1label->setObjectName(QString::fromUtf8("Y1label"));
+        Y1label->setObjectName(QStringLiteral("Y1label"));
 
         gridLayout_3->addWidget(Y1label, 3, 0, 1, 1);
 
         X1comboBox = new QComboBox(Plot2DDatapage);
-        X1comboBox->setObjectName(QString::fromUtf8("X1comboBox"));
+        X1comboBox->setObjectName(QStringLiteral("X1comboBox"));
         X1comboBox->setEnabled(false);
 
         gridLayout_3->addWidget(X1comboBox, 2, 3, 1, 1);
 
         X1label = new QLabel(Plot2DDatapage);
-        X1label->setObjectName(QString::fromUtf8("X1label"));
+        X1label->setObjectName(QStringLiteral("X1label"));
 
         gridLayout_3->addWidget(X1label, 2, 0, 1, 1);
 
         pushButton = new QPushButton(Plot2DDatapage);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setObjectName(QStringLiteral("pushButton"));
 
         gridLayout_3->addWidget(pushButton, 7, 1, 1, 1);
 
         X1FilelineEdit = new QLineEdit(Plot2DDatapage);
-        X1FilelineEdit->setObjectName(QString::fromUtf8("X1FilelineEdit"));
+        X1FilelineEdit->setObjectName(QStringLiteral("X1FilelineEdit"));
 
         gridLayout_3->addWidget(X1FilelineEdit, 2, 1, 1, 1);
 
         pushButton_2 = new QPushButton(Plot2DDatapage);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
 
         gridLayout_3->addWidget(pushButton_2, 6, 1, 1, 1);
 
         Plot2DstackedWidget->addWidget(Plot2DDatapage);
         Plot2DAxespage = new QWidget();
-        Plot2DAxespage->setObjectName(QString::fromUtf8("Plot2DAxespage"));
+        Plot2DAxespage->setObjectName(QStringLiteral("Plot2DAxespage"));
         gridLayout_4 = new QGridLayout(Plot2DAxespage);
         gridLayout_4->setSpacing(6);
         gridLayout_4->setContentsMargins(11, 11, 11, 11);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
         gridLayout_8 = new QGridLayout();
         gridLayout_8->setSpacing(6);
-        gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
         YticsMinorspinBox = new QSpinBox(Plot2DAxespage);
-        YticsMinorspinBox->setObjectName(QString::fromUtf8("YticsMinorspinBox"));
+        YticsMinorspinBox->setObjectName(QStringLiteral("YticsMinorspinBox"));
         YticsMinorspinBox->setEnabled(false);
         YticsMinorspinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         YticsMinorspinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
@@ -255,7 +256,7 @@ public:
         gridLayout_8->addWidget(YticsMinorspinBox, 5, 2, 1, 1);
 
         YticsLengthdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        YticsLengthdoubleSpinBox->setObjectName(QString::fromUtf8("YticsLengthdoubleSpinBox"));
+        YticsLengthdoubleSpinBox->setObjectName(QStringLiteral("YticsLengthdoubleSpinBox"));
         YticsLengthdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         YticsLengthdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
         YticsLengthdoubleSpinBox->setValue(5);
@@ -263,13 +264,13 @@ public:
         gridLayout_8->addWidget(YticsLengthdoubleSpinBox, 4, 4, 1, 1);
 
         YticsRightcheckBox = new QCheckBox(Plot2DAxespage);
-        YticsRightcheckBox->setObjectName(QString::fromUtf8("YticsRightcheckBox"));
+        YticsRightcheckBox->setObjectName(QStringLiteral("YticsRightcheckBox"));
         YticsRightcheckBox->setChecked(true);
 
         gridLayout_8->addWidget(YticsRightcheckBox, 4, 5, 1, 1);
 
         label_5 = new QLabel(Plot2DAxespage);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setObjectName(QStringLiteral("label_5"));
         QSizePolicy sizePolicy2(QSizePolicy::Maximum, QSizePolicy::Preferred);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -279,7 +280,7 @@ public:
         gridLayout_8->addWidget(label_5, 3, 1, 1, 1);
 
         XticsMinorspinBox = new QSpinBox(Plot2DAxespage);
-        XticsMinorspinBox->setObjectName(QString::fromUtf8("XticsMinorspinBox"));
+        XticsMinorspinBox->setObjectName(QStringLiteral("XticsMinorspinBox"));
         XticsMinorspinBox->setEnabled(false);
         XticsMinorspinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         XticsMinorspinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
@@ -287,22 +288,22 @@ public:
         gridLayout_8->addWidget(XticsMinorspinBox, 2, 2, 1, 1);
 
         YticslineEdit = new QLineEdit(Plot2DAxespage);
-        YticslineEdit->setObjectName(QString::fromUtf8("YticslineEdit"));
+        YticslineEdit->setObjectName(QStringLiteral("YticslineEdit"));
 
         gridLayout_8->addWidget(YticslineEdit, 4, 1, 1, 2);
 
         label_10 = new QLabel(Plot2DAxespage);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setObjectName(QStringLiteral("label_10"));
 
         gridLayout_8->addWidget(label_10, 6, 1, 1, 1);
 
         XticslineEdit = new QLineEdit(Plot2DAxespage);
-        XticslineEdit->setObjectName(QString::fromUtf8("XticslineEdit"));
+        XticslineEdit->setObjectName(QStringLiteral("XticslineEdit"));
 
         gridLayout_8->addWidget(XticslineEdit, 1, 1, 1, 2);
 
         YticsMinorLengthdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        YticsMinorLengthdoubleSpinBox->setObjectName(QString::fromUtf8("YticsMinorLengthdoubleSpinBox"));
+        YticsMinorLengthdoubleSpinBox->setObjectName(QStringLiteral("YticsMinorLengthdoubleSpinBox"));
         YticsMinorLengthdoubleSpinBox->setEnabled(false);
         YticsMinorLengthdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         YticsMinorLengthdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
@@ -310,7 +311,7 @@ public:
         gridLayout_8->addWidget(YticsMinorLengthdoubleSpinBox, 5, 4, 1, 1);
 
         XticsLengthdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        XticsLengthdoubleSpinBox->setObjectName(QString::fromUtf8("XticsLengthdoubleSpinBox"));
+        XticsLengthdoubleSpinBox->setObjectName(QStringLiteral("XticsLengthdoubleSpinBox"));
         XticsLengthdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         XticsLengthdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
         XticsLengthdoubleSpinBox->setValue(5);
@@ -318,73 +319,73 @@ public:
         gridLayout_8->addWidget(XticsLengthdoubleSpinBox, 1, 4, 1, 1);
 
         YticsMinorcheckBox = new QCheckBox(Plot2DAxespage);
-        YticsMinorcheckBox->setObjectName(QString::fromUtf8("YticsMinorcheckBox"));
+        YticsMinorcheckBox->setObjectName(QStringLiteral("YticsMinorcheckBox"));
 
         gridLayout_8->addWidget(YticsMinorcheckBox, 5, 1, 1, 1);
 
         checkBox_4 = new QCheckBox(Plot2DAxespage);
-        checkBox_4->setObjectName(QString::fromUtf8("checkBox_4"));
+        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
         checkBox_4->setChecked(true);
 
         gridLayout_8->addWidget(checkBox_4, 4, 6, 1, 1);
 
         line_3 = new QFrame(Plot2DAxespage);
-        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setObjectName(QStringLiteral("line_3"));
         line_3->setFrameShape(QFrame::HLine);
         line_3->setFrameShadow(QFrame::Sunken);
 
         gridLayout_8->addWidget(line_3, 0, 1, 1, 6);
 
         XticsBottomcheckBox = new QCheckBox(Plot2DAxespage);
-        XticsBottomcheckBox->setObjectName(QString::fromUtf8("XticsBottomcheckBox"));
+        XticsBottomcheckBox->setObjectName(QStringLiteral("XticsBottomcheckBox"));
         XticsBottomcheckBox->setChecked(true);
 
         gridLayout_8->addWidget(XticsBottomcheckBox, 1, 6, 1, 1);
 
         label_11 = new QLabel(Plot2DAxespage);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setObjectName(QStringLiteral("label_11"));
         label_11->setEnabled(false);
 
         gridLayout_8->addWidget(label_11, 5, 3, 1, 1);
 
         label_6 = new QLabel(Plot2DAxespage);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setObjectName(QStringLiteral("label_6"));
         sizePolicy2.setHeightForWidth(label_6->sizePolicy().hasHeightForWidth());
         label_6->setSizePolicy(sizePolicy2);
 
         gridLayout_8->addWidget(label_6, 1, 3, 1, 1);
 
         XticsTopcheckBox = new QCheckBox(Plot2DAxespage);
-        XticsTopcheckBox->setObjectName(QString::fromUtf8("XticsTopcheckBox"));
+        XticsTopcheckBox->setObjectName(QStringLiteral("XticsTopcheckBox"));
         XticsTopcheckBox->setChecked(true);
 
         gridLayout_8->addWidget(XticsTopcheckBox, 1, 5, 1, 1);
 
         label_4 = new QLabel(Plot2DAxespage);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setObjectName(QStringLiteral("label_4"));
         sizePolicy2.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
         label_4->setSizePolicy(sizePolicy2);
 
         gridLayout_8->addWidget(label_4, 1, 0, 1, 1);
 
         label_8 = new QLabel(Plot2DAxespage);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setObjectName(QStringLiteral("label_8"));
 
         gridLayout_8->addWidget(label_8, 4, 0, 1, 1);
 
         label_3 = new QLabel(Plot2DAxespage);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setObjectName(QStringLiteral("label_3"));
 
         gridLayout_8->addWidget(label_3, 0, 0, 1, 1);
 
         label_7 = new QLabel(Plot2DAxespage);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setObjectName(QStringLiteral("label_7"));
         label_7->setEnabled(false);
 
         gridLayout_8->addWidget(label_7, 2, 3, 1, 1);
 
         XticsMinorLengthdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        XticsMinorLengthdoubleSpinBox->setObjectName(QString::fromUtf8("XticsMinorLengthdoubleSpinBox"));
+        XticsMinorLengthdoubleSpinBox->setObjectName(QStringLiteral("XticsMinorLengthdoubleSpinBox"));
         XticsMinorLengthdoubleSpinBox->setEnabled(false);
         XticsMinorLengthdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         XticsMinorLengthdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
@@ -392,75 +393,75 @@ public:
         gridLayout_8->addWidget(XticsMinorLengthdoubleSpinBox, 2, 4, 1, 1);
 
         YticsOffsetdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        YticsOffsetdoubleSpinBox->setObjectName(QString::fromUtf8("YticsOffsetdoubleSpinBox"));
+        YticsOffsetdoubleSpinBox->setObjectName(QStringLiteral("YticsOffsetdoubleSpinBox"));
         YticsOffsetdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         YticsOffsetdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
 
         gridLayout_8->addWidget(YticsOffsetdoubleSpinBox, 6, 2, 1, 1);
 
         label_9 = new QLabel(Plot2DAxespage);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setObjectName(QStringLiteral("label_9"));
 
         gridLayout_8->addWidget(label_9, 4, 3, 1, 1);
 
         XticsMinorcheckBox = new QCheckBox(Plot2DAxespage);
-        XticsMinorcheckBox->setObjectName(QString::fromUtf8("XticsMinorcheckBox"));
+        XticsMinorcheckBox->setObjectName(QStringLiteral("XticsMinorcheckBox"));
 
         gridLayout_8->addWidget(XticsMinorcheckBox, 2, 1, 1, 1);
 
         XticsOffsetdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        XticsOffsetdoubleSpinBox->setObjectName(QString::fromUtf8("XticsOffsetdoubleSpinBox"));
+        XticsOffsetdoubleSpinBox->setObjectName(QStringLiteral("XticsOffsetdoubleSpinBox"));
         XticsOffsetdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         XticsOffsetdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
 
         gridLayout_8->addWidget(XticsOffsetdoubleSpinBox, 3, 2, 1, 1);
 
         YticsFonttoolButton = new QToolButton(Plot2DAxespage);
-        YticsFonttoolButton->setObjectName(QString::fromUtf8("YticsFonttoolButton"));
+        YticsFonttoolButton->setObjectName(QStringLiteral("YticsFonttoolButton"));
 
         gridLayout_8->addWidget(YticsFonttoolButton, 7, 1, 1, 1);
 
         label_12 = new QLabel(Plot2DAxespage);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setObjectName(QStringLiteral("label_12"));
 
         gridLayout_8->addWidget(label_12, 7, 0, 1, 1);
 
 
         gridLayout_4->addLayout(gridLayout_8, 6, 0, 1, 1);
 
-        verticalSpacer_3 = new QSpacerItem(20, 15, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        verticalSpacer_3 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
         gridLayout_4->addItem(verticalSpacer_3, 5, 0, 1, 1);
 
         gridLayout_7 = new QGridLayout();
         gridLayout_7->setSpacing(6);
-        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setObjectName(QStringLiteral("gridLayout_7"));
         YLabeloffsetdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        YLabeloffsetdoubleSpinBox->setObjectName(QString::fromUtf8("YLabeloffsetdoubleSpinBox"));
+        YLabeloffsetdoubleSpinBox->setObjectName(QStringLiteral("YLabeloffsetdoubleSpinBox"));
         YLabeloffsetdoubleSpinBox->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         YLabeloffsetdoubleSpinBox->setButtonSymbols(QAbstractSpinBox::NoButtons);
 
         gridLayout_7->addWidget(YLabeloffsetdoubleSpinBox, 2, 3, 1, 1);
 
         label_2 = new QLabel(Plot2DAxespage);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
 
         gridLayout_7->addWidget(label_2, 2, 2, 1, 1);
 
         Labelslabel = new QLabel(Plot2DAxespage);
-        Labelslabel->setObjectName(QString::fromUtf8("Labelslabel"));
+        Labelslabel->setObjectName(QStringLiteral("Labelslabel"));
 
         gridLayout_7->addWidget(Labelslabel, 0, 0, 1, 1);
 
         label = new QLabel(Plot2DAxespage);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
         sizePolicy2.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
         label->setSizePolicy(sizePolicy2);
 
         gridLayout_7->addWidget(label, 1, 2, 1, 1);
 
         XLabeloffsetdoubleSpinBox = new QDoubleSpinBox(Plot2DAxespage);
-        XLabeloffsetdoubleSpinBox->setObjectName(QString::fromUtf8("XLabeloffsetdoubleSpinBox"));
+        XLabeloffsetdoubleSpinBox->setObjectName(QStringLiteral("XLabeloffsetdoubleSpinBox"));
         QSizePolicy sizePolicy3(QSizePolicy::Maximum, QSizePolicy::Fixed);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
@@ -472,39 +473,39 @@ public:
         gridLayout_7->addWidget(XLabeloffsetdoubleSpinBox, 1, 3, 1, 1);
 
         YLabellabel = new QLabel(Plot2DAxespage);
-        YLabellabel->setObjectName(QString::fromUtf8("YLabellabel"));
+        YLabellabel->setObjectName(QStringLiteral("YLabellabel"));
 
         gridLayout_7->addWidget(YLabellabel, 2, 0, 1, 1);
 
         XLabellabel = new QLabel(Plot2DAxespage);
-        XLabellabel->setObjectName(QString::fromUtf8("XLabellabel"));
+        XLabellabel->setObjectName(QStringLiteral("XLabellabel"));
 
         gridLayout_7->addWidget(XLabellabel, 1, 0, 1, 1);
 
         YLabellineEdit = new QLineEdit(Plot2DAxespage);
-        YLabellineEdit->setObjectName(QString::fromUtf8("YLabellineEdit"));
+        YLabellineEdit->setObjectName(QStringLiteral("YLabellineEdit"));
 
         gridLayout_7->addWidget(YLabellineEdit, 2, 1, 1, 1);
 
         XLabellineEdit = new QLineEdit(Plot2DAxespage);
-        XLabellineEdit->setObjectName(QString::fromUtf8("XLabellineEdit"));
+        XLabellineEdit->setObjectName(QStringLiteral("XLabellineEdit"));
 
         gridLayout_7->addWidget(XLabellineEdit, 1, 1, 1, 1);
 
         Fontlabel = new QLabel(Plot2DAxespage);
-        Fontlabel->setObjectName(QString::fromUtf8("Fontlabel"));
+        Fontlabel->setObjectName(QStringLiteral("Fontlabel"));
         sizePolicy2.setHeightForWidth(Fontlabel->sizePolicy().hasHeightForWidth());
         Fontlabel->setSizePolicy(sizePolicy2);
 
         gridLayout_7->addWidget(Fontlabel, 3, 0, 1, 1);
 
         LabelFonttoolButton = new QToolButton(Plot2DAxespage);
-        LabelFonttoolButton->setObjectName(QString::fromUtf8("LabelFonttoolButton"));
+        LabelFonttoolButton->setObjectName(QStringLiteral("LabelFonttoolButton"));
 
         gridLayout_7->addWidget(LabelFonttoolButton, 3, 1, 1, 1);
 
         line_2 = new QFrame(Plot2DAxespage);
-        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setObjectName(QStringLiteral("line_2"));
         line_2->setFrameShape(QFrame::HLine);
         line_2->setFrameShadow(QFrame::Sunken);
 
@@ -514,31 +515,34 @@ public:
         gridLayout_4->addLayout(gridLayout_7, 4, 0, 1, 1);
 
         Plot2DstackedWidget->addWidget(Plot2DAxespage);
+        page = new QWidget();
+        page->setObjectName(QStringLiteral("page"));
+        Plot2DstackedWidget->addWidget(page);
 
         gridLayout_2->addWidget(Plot2DstackedWidget, 0, 1, 1, 1);
 
         MaintabWidget->addTab(Plot2Dtab, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setObjectName(QStringLiteral("tab_2"));
         MaintabWidget->addTab(tab_2, QString());
 
         gridLayout->addWidget(MaintabWidget, 0, 0, 1, 1);
 
         QPyLOTWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(QPyLOTWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
+        menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 714, 22));
         QPyLOTWindow->setMenuBar(menuBar);
         statusBar = new QStatusBar(QPyLOTWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setObjectName(QStringLiteral("statusBar"));
         QPyLOTWindow->setStatusBar(statusBar);
         mainToolBar = new QToolBar(QPyLOTWindow);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         QPyLOTWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
 
         retranslateUi(QPyLOTWindow);
 
-        Plot2DstackedWidget->setCurrentIndex(1);
+        Plot2DstackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(QPyLOTWindow);
@@ -546,56 +550,56 @@ public:
 
     void retranslateUi(QMainWindow *QPyLOTWindow)
     {
-        QPyLOTWindow->setWindowTitle(QApplication::translate("QPyLOTWindow", "QPyLOT", 0, QApplication::UnicodeUTF8));
+        QPyLOTWindow->setWindowTitle(QApplication::translate("QPyLOTWindow", "QPyLOT", 0));
 
         const bool __sortingEnabled = Plot2DlistWidget->isSortingEnabled();
         Plot2DlistWidget->setSortingEnabled(false);
         QListWidgetItem *___qlistwidgetitem = Plot2DlistWidget->item(0);
-        ___qlistwidgetitem->setText(QApplication::translate("QPyLOTWindow", "Data", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem->setText(QApplication::translate("QPyLOTWindow", "Data", 0));
         QListWidgetItem *___qlistwidgetitem1 = Plot2DlistWidget->item(1);
-        ___qlistwidgetitem1->setText(QApplication::translate("QPyLOTWindow", "Axes", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem1->setText(QApplication::translate("QPyLOTWindow", "Axes", 0));
         QListWidgetItem *___qlistwidgetitem2 = Plot2DlistWidget->item(2);
-        ___qlistwidgetitem2->setText(QApplication::translate("QPyLOTWindow", "Markers", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem2->setText(QApplication::translate("QPyLOTWindow", "Markers", 0));
         QListWidgetItem *___qlistwidgetitem3 = Plot2DlistWidget->item(3);
-        ___qlistwidgetitem3->setText(QApplication::translate("QPyLOTWindow", "Legend", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem3->setText(QApplication::translate("QPyLOTWindow", "Legend", 0));
         QListWidgetItem *___qlistwidgetitem4 = Plot2DlistWidget->item(4);
-        ___qlistwidgetitem4->setText(QApplication::translate("QPyLOTWindow", "Text", 0, QApplication::UnicodeUTF8));
+        ___qlistwidgetitem4->setText(QApplication::translate("QPyLOTWindow", "Text", 0));
         Plot2DlistWidget->setSortingEnabled(__sortingEnabled);
 
-        Filelabel->setText(QApplication::translate("QPyLOTWindow", "File (ASCII or FITS table)", 0, QApplication::UnicodeUTF8));
-        Y1pushButton->setText(QApplication::translate("QPyLOTWindow", "Open", 0, QApplication::UnicodeUTF8));
-        Columnlabel->setText(QApplication::translate("QPyLOTWindow", "Column", 0, QApplication::UnicodeUTF8));
-        X1pushButton->setText(QApplication::translate("QPyLOTWindow", "Open", 0, QApplication::UnicodeUTF8));
-        Y1label->setText(QApplication::translate("QPyLOTWindow", "Y", 0, QApplication::UnicodeUTF8));
-        X1label->setText(QApplication::translate("QPyLOTWindow", "X  ", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("QPyLOTWindow", "PushButton", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("QPyLOTWindow", "PushButton", 0, QApplication::UnicodeUTF8));
-        YticsRightcheckBox->setText(QApplication::translate("QPyLOTWindow", "Left", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("QPyLOTWindow", "Label offset", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("QPyLOTWindow", "Label offset", 0, QApplication::UnicodeUTF8));
-        YticsMinorcheckBox->setText(QApplication::translate("QPyLOTWindow", "Minor tics", 0, QApplication::UnicodeUTF8));
-        checkBox_4->setText(QApplication::translate("QPyLOTWindow", "Right", 0, QApplication::UnicodeUTF8));
-        XticsBottomcheckBox->setText(QApplication::translate("QPyLOTWindow", "Bottom", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("QPyLOTWindow", "Length", 0, QApplication::UnicodeUTF8));
-        label_6->setText(QApplication::translate("QPyLOTWindow", "Length", 0, QApplication::UnicodeUTF8));
-        XticsTopcheckBox->setText(QApplication::translate("QPyLOTWindow", "Top", 0, QApplication::UnicodeUTF8));
-        label_4->setText(QApplication::translate("QPyLOTWindow", "  X tics:", 0, QApplication::UnicodeUTF8));
-        label_8->setText(QApplication::translate("QPyLOTWindow", "  Y tics:", 0, QApplication::UnicodeUTF8));
-        label_3->setText(QApplication::translate("QPyLOTWindow", "TICS      ", 0, QApplication::UnicodeUTF8));
-        label_7->setText(QApplication::translate("QPyLOTWindow", "Length", 0, QApplication::UnicodeUTF8));
-        label_9->setText(QApplication::translate("QPyLOTWindow", "Length", 0, QApplication::UnicodeUTF8));
-        XticsMinorcheckBox->setText(QApplication::translate("QPyLOTWindow", " Minor tics", 0, QApplication::UnicodeUTF8));
-        YticsFonttoolButton->setText(QApplication::translate("QPyLOTWindow", "Helvetica, 12 pt", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("QPyLOTWindow", "  Font", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("QPyLOTWindow", "Offset", 0, QApplication::UnicodeUTF8));
-        Labelslabel->setText(QApplication::translate("QPyLOTWindow", "LABELS", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("QPyLOTWindow", "Offset", 0, QApplication::UnicodeUTF8));
-        YLabellabel->setText(QApplication::translate("QPyLOTWindow", "  Y label:", 0, QApplication::UnicodeUTF8));
-        XLabellabel->setText(QApplication::translate("QPyLOTWindow", "  X label:", 0, QApplication::UnicodeUTF8));
-        Fontlabel->setText(QApplication::translate("QPyLOTWindow", "  Font:", 0, QApplication::UnicodeUTF8));
-        LabelFonttoolButton->setText(QApplication::translate("QPyLOTWindow", "Helvetica, 12 pt", 0, QApplication::UnicodeUTF8));
-        MaintabWidget->setTabText(MaintabWidget->indexOf(Plot2Dtab), QApplication::translate("QPyLOTWindow", "2D Plot", 0, QApplication::UnicodeUTF8));
-        MaintabWidget->setTabText(MaintabWidget->indexOf(tab_2), QApplication::translate("QPyLOTWindow", "Tab 2", 0, QApplication::UnicodeUTF8));
+        Filelabel->setText(QApplication::translate("QPyLOTWindow", "File (ASCII or FITS table)", 0));
+        Y1pushButton->setText(QApplication::translate("QPyLOTWindow", "Open", 0));
+        Columnlabel->setText(QApplication::translate("QPyLOTWindow", "Column", 0));
+        X1pushButton->setText(QApplication::translate("QPyLOTWindow", "Open", 0));
+        Y1label->setText(QApplication::translate("QPyLOTWindow", "Y", 0));
+        X1label->setText(QApplication::translate("QPyLOTWindow", "X  ", 0));
+        pushButton->setText(QApplication::translate("QPyLOTWindow", "PushButton", 0));
+        pushButton_2->setText(QApplication::translate("QPyLOTWindow", "PushButton", 0));
+        YticsRightcheckBox->setText(QApplication::translate("QPyLOTWindow", "Left", 0));
+        label_5->setText(QApplication::translate("QPyLOTWindow", "Label offset", 0));
+        label_10->setText(QApplication::translate("QPyLOTWindow", "Label offset", 0));
+        YticsMinorcheckBox->setText(QApplication::translate("QPyLOTWindow", "Minor tics", 0));
+        checkBox_4->setText(QApplication::translate("QPyLOTWindow", "Right", 0));
+        XticsBottomcheckBox->setText(QApplication::translate("QPyLOTWindow", "Bottom", 0));
+        label_11->setText(QApplication::translate("QPyLOTWindow", "Length", 0));
+        label_6->setText(QApplication::translate("QPyLOTWindow", "Length", 0));
+        XticsTopcheckBox->setText(QApplication::translate("QPyLOTWindow", "Top", 0));
+        label_4->setText(QApplication::translate("QPyLOTWindow", "  X tics:", 0));
+        label_8->setText(QApplication::translate("QPyLOTWindow", "  Y tics:", 0));
+        label_3->setText(QApplication::translate("QPyLOTWindow", "TICS      ", 0));
+        label_7->setText(QApplication::translate("QPyLOTWindow", "Length", 0));
+        label_9->setText(QApplication::translate("QPyLOTWindow", "Length", 0));
+        XticsMinorcheckBox->setText(QApplication::translate("QPyLOTWindow", " Minor tics", 0));
+        YticsFonttoolButton->setText(QApplication::translate("QPyLOTWindow", "Helvetica, 12 pt", 0));
+        label_12->setText(QApplication::translate("QPyLOTWindow", "  Font", 0));
+        label_2->setText(QApplication::translate("QPyLOTWindow", "Offset", 0));
+        Labelslabel->setText(QApplication::translate("QPyLOTWindow", "LABELS", 0));
+        label->setText(QApplication::translate("QPyLOTWindow", "Offset", 0));
+        YLabellabel->setText(QApplication::translate("QPyLOTWindow", "  Y label:", 0));
+        XLabellabel->setText(QApplication::translate("QPyLOTWindow", "  X label:", 0));
+        Fontlabel->setText(QApplication::translate("QPyLOTWindow", "  Font:", 0));
+        LabelFonttoolButton->setText(QApplication::translate("QPyLOTWindow", "Helvetica, 12 pt", 0));
+        MaintabWidget->setTabText(MaintabWidget->indexOf(Plot2Dtab), QApplication::translate("QPyLOTWindow", "2D Plot", 0));
+        MaintabWidget->setTabText(MaintabWidget->indexOf(tab_2), QApplication::translate("QPyLOTWindow", "Tab 2", 0));
     } // retranslateUi
 
 };

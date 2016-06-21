@@ -17,5 +17,9 @@ SOURCES += main.cpp\
 
 HEADERS  += qpylotwindow.h
 
-FORMS    += qpylotwindow.ui
+FORMS    += qpylotwindow.ui\
+            qpylot_p1d_window.ui
+
+DISTFILES += \
+    pippo.py
 
