@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>QPyLOT_p1d_Window</class>
- <widget class="QMainWindow" name="QPyLOT_p1d_Window">
+ <class>Plot1D_Window</class>
+ <widget class="QMainWindow" name="Plot1D_Window">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,16 +11,36 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QPyLOT</string>
+   <string>QPyLOT - Plot 1D</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLineEdit" name="lineEdit"/>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="File_lineEdit"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="File_label">
+      <property name="text">
+       <string>Source</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="File_pushButton">
+      <property name="text">
+       <string>Open</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
@@ -35,10 +55,15 @@
      <x>0</x>
      <y>0</y>
      <width>519</width>
-     <height>22</height>
+     <height>27</height>
     </rect>
    </property>
   </widget>
+  <action name="actionAaa">
+   <property name="text">
+    <string>aaa</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

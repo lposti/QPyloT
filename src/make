@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PYUIC=pyuic5
+
+$PYUIC -o ui_start.py start_window.ui
+$PYUIC -o ui_plot1d.py plot1d_window.ui
