@@ -25,6 +25,6 @@ class Plot1DWindow(QMainWindow, Ui_Plot1D_Window):
 
     def FileChanged(self):
         filename = self.File_lineEdit.text()
-        if filename:
+        if filename: 
             print (filename)
 
