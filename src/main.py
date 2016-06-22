@@ -1,13 +1,23 @@
+
+
+
+import sys,subprocess
 from PyQt5.QtWidgets import *
 
-
-
-import sys
 from ui_start import Ui_Start_Window
-from ui_plot1d import Ui_Plot1D_Window
-
+from plot1d import Plot1DWindow
 
 from ui_qpylot import Ui_QPyLOTWindow
+
+
+def open_file(filename):
+    if sys.platform.startswith('darwin'):
+        subprocess.call(('open', filename))
+    elif os.name == 'nt':
+        os.startfile(filepath)
+    elif os.name == 'posix':
+        subprocess.call(('xdg-open', filename))
+
 
 class StartWindow(QMainWindow, Ui_Start_Window):
     def __init__(self, parent=None):
@@ -34,27 +44,10 @@ class StartWindow(QMainWindow, Ui_Start_Window):
 
     def chk_fun(self):
 	    print("Good.")
+        
+    
 
 
-
-class Plot1DWindow(QMainWindow, Ui_Plot1D_Window):
-    def __init__(self, parent=None):
-        super(Plot1DWindow, self).__init__(parent)
-        self.setupUi(self)
-
-        self.File_pushButton.clicked.connect(self.openDialog)
-        self.File_lineEdit.editingFinished.connect(self.FileChanged)
-
-    def openDialog(self):
-        filename = QFileDialog.getOpenFileName(self, 'Open file')
-        if filename:
-            self.File_lineEdit.setText(filename[0])
-            self.FileChanged()
-
-    def FileChanged(self):
-        filename = self.File_lineEdit.text()
-        if filename:
-            print (filename)
 
 
 
