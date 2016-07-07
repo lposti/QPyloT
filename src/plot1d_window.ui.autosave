@@ -351,20 +351,6 @@
          <layout class="QVBoxLayout" name="verticalLayout_3">
           <item>
            <layout class="QGridLayout" name="gridLayout_2">
-            <item row="2" column="0" alignment="Qt::AlignRight">
-             <widget class="QCheckBox" name="Xrange_checkBox">
-              <property name="text">
-               <string>X Range:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0" alignment="Qt::AlignHCenter">
-             <widget class="QCheckBox" name="Yrange_checkBox">
-              <property name="text">
-               <string>Y Range:</string>
-              </property>
-             </widget>
-            </item>
             <item row="2" column="3">
              <widget class="QLineEdit" name="Xrange_to_lineEdit">
               <property name="enabled">
@@ -440,6 +426,20 @@
               </property>
               <property name="margin">
                <number>2</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="Xrange_checkBox">
+              <property name="text">
+               <string>X Range:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QCheckBox" name="Yrange_checkBox">
+              <property name="text">
+               <string>Y Range:</string>
               </property>
              </widget>
             </item>
@@ -918,6 +918,12 @@
         </property>
         <property name="popupMode">
          <enum>QToolButton::MenuButtonPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
         </property>
         <property name="arrowType">
          <enum>Qt::NoArrow</enum>
