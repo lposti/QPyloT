@@ -3,4 +3,8 @@
 PYUIC=pyuic5
 
 $PYUIC -o ui_start.py start_window.ui
-$PYUIC -o ui_plot1d.py plot1d_window.ui
+$PYUIC -o ui_plot1d.py plot1d.ui
+$PYUIC -o ui_plot1d_tabw.py plot1d_tabw.ui
+
+
+$PYUIC -o ui_dummy.py dummy.ui

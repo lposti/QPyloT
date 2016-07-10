@@ -1,8 +1,11 @@
-
-
-
+try:
+    from PySide.QtWidgets import *
+except:
+    from PyQt5.QtWidgets import *
+    
+    
+    
 import sys,subprocess
-from PyQt5.QtWidgets import *
 
 from ui_start import Ui_Start_Window
 from plot1d import Plot1DWindow
