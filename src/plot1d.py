@@ -6,8 +6,8 @@
 import os
 import numpy as np
 from PyQt5.QtWidgets import *
-from ui_plot1d import Ui_Plot1D_Window
-from ui_plot1d_tabw import Ui_Plot1D_tabwidget
+from moc.ui_plot1d import Ui_Plot1D_Window
+from moc.ui_plot1d_tabw import Ui_Plot1D_tabwidget
 
 from PyQt5 import QtWidgets, QtCore, QtGui
 

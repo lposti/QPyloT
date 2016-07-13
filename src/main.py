@@ -7,10 +7,10 @@ except:
     
 import sys,subprocess
 
-from ui_start import Ui_Start_Window
+from moc.ui_start import Ui_Start_Window
 from plot1d import Plot1DWindow
 
-from ui_qpylot import Ui_QPyLOTWindow
+from moc.ui_qpylot import Ui_QPyLOTWindow
 
 from PyQt5 import QtGui
 
