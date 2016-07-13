@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'start_window.ui'
+# Form implementation generated from reading ui file 'UIs/start_window.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Start_Window(object):
     def setupUi(self, Start_Window):
         Start_Window.setObjectName("Start_Window")
-        Start_Window.resize(583, 168)
+        Start_Window.resize(583, 225)
         self.centralWidget = QtWidgets.QWidget(Start_Window)
         self.centralWidget.setObjectName("centralWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralWidget)

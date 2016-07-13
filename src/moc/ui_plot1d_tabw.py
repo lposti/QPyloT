@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'plot1d_tabw.ui'
+# Form implementation generated from reading ui file 'UIs/plot1d_tabw.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
