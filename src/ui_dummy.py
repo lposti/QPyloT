@@ -20,6 +20,9 @@ class Ui_Form(object):
         self.buttonGroup.setObjectName("buttonGroup")
         self.buttonGroup.addButton(self.radioButton)
         self.horizontalLayout.addWidget(self.radioButton)
+        self.pushButton = QtWidgets.QPushButton(Form)
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout.addWidget(self.pushButton)
         self.toolButton = QtWidgets.QToolButton(Form)
         self.toolButton.setToolButtonStyle(QtCore.Qt.ToolButtonTextOnly)
         self.toolButton.setArrowType(QtCore.Qt.DownArrow)
@@ -37,6 +40,7 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.radioButton.setText(_translate("Form", "RadioButton"))
+        self.pushButton.setText(_translate("Form", "PushButton"))
         self.toolButton.setText(_translate("Form", "..."))
         self.radioButton_2.setText(_translate("Form", "RadioButton"))
 

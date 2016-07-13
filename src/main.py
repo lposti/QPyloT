@@ -12,6 +12,7 @@ from plot1d import Plot1DWindow
 
 from ui_qpylot import Ui_QPyLOTWindow
 
+from PyQt5 import QtGui
 
 def open_file(filename):
     if sys.platform.startswith('darwin'):
@@ -29,7 +30,28 @@ class StartWindow(QMainWindow, Ui_Start_Window):
         self.plot1d_w = None
         self.plot2d_w = None
 
-
+        # Set the QToolBar with different QAction. The QActionGroup is used for
+        # keep button-down the selected QAction. You can do the same with 
+        # QToolButton and QButtonGroup 
+        self.actionGroup = QActionGroup(parent)
+        self.actionPlot1D = QAction("Plot1D", self.actionGroup)
+        self.actionPlot1D.setCheckable(True)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("icons/settings.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionPlot1D.setIcon(icon)
+        self.actionPlot2D = QAction("Plot2D", self.actionGroup)
+        self.actionPlot2D.setCheckable(True)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("icons/plus_128.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.actionPlot2D.setIcon(icon)
+        self.mainToolBar.addAction(self.actionPlot1D)
+        self.mainToolBar.addAction(self.actionPlot2D)
+        
+        
+        
+        
+        
+        self.actionPlot1D.triggered.connect(self.openPlot1D_Window)
         self.pushButton_plot1d.clicked.connect(self.openPlot1D_Window)
         self.pushButton_plot2d.clicked.connect(self.openPlot2D_Window)
 
@@ -64,8 +86,8 @@ class Plot2DWindow(QMainWindow, Ui_QPyLOTWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
- #   frame = StartWindow()
-    frame = Plot1DWindow()
+    frame = StartWindow()
+ #   frame = Plot1DWindow()
     frame.show()
     app.exec_()
 	

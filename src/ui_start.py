@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Start_Window(object):
     def setupUi(self, Start_Window):
         Start_Window.setObjectName("Start_Window")
-        Start_Window.resize(583, 116)
+        Start_Window.resize(583, 168)
         self.centralWidget = QtWidgets.QWidget(Start_Window)
         self.centralWidget.setObjectName("centralWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralWidget)
@@ -35,8 +35,11 @@ class Ui_Start_Window(object):
         self.menuFile.setObjectName("menuFile")
         Start_Window.setMenuBar(self.menuBar)
         self.mainToolBar = QtWidgets.QToolBar(Start_Window)
+        self.mainToolBar.setMovable(True)
+        self.mainToolBar.setIconSize(QtCore.QSize(28, 28))
+        self.mainToolBar.setToolButtonStyle(QtCore.Qt.ToolButtonTextUnderIcon)
         self.mainToolBar.setObjectName("mainToolBar")
-        Start_Window.addToolBar(QtCore.Qt.TopToolBarArea, self.mainToolBar)
+        Start_Window.addToolBar(QtCore.Qt.LeftToolBarArea, self.mainToolBar)
         self.statusBar = QtWidgets.QStatusBar(Start_Window)
         self.statusBar.setObjectName("statusBar")
         Start_Window.setStatusBar(self.statusBar)
